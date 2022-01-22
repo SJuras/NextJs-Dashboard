@@ -39,7 +39,7 @@ import MyChart from '../components/MyChart';
 
 export default function dashboard() {
 
-  
+  const [display, changeDisplay] = useState('hide');
 
   return(
     <Flex h="100vh" flexDir="row" overflow="hidden" maxW="2000px">
@@ -134,33 +134,92 @@ export default function dashboard() {
                 <Tr>
                   <Td>
                     <Flex align="center">
-                      <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
+                      <Avatar size="sm" mr={2} src="images/starbucks.png" />
                       <Flex flexDir="column">
-                        <Heading size="sm" letterSpacing="tight">Amazon</Heading>
-                        <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                        <Heading size="sm" letterSpacing="tight">Starbucks</Heading>
+                        <Text fontSize="sm" color="gray">Apr 24, 2022 at 12:23am</Text>
                       </Flex>
                     </Flex>
                   </Td>
-                  <Td>Electronic Devices</Td>
-                  <Td isNumeric>+2$</Td>
-                  <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                  <Td>Beverage</Td>
+                  <Td isNumeric>0$</Td>
+                  <Td isNumeric><Text fontWeight="bold" display="inline-table">-$12</Text>.00</Td>
                 </Tr>
-                <Tr>
-                  <Td>
-                    <Flex align="center">
-                      <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
-                      <Flex flexDir="column">
-                        <Heading size="sm" letterSpacing="tight">Amazon</Heading>
-                        <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+
+                {
+                  display == 'show' &&
+                  <>
+                  <Tr>
+                    <Td>
+                      <Flex align="center">
+                        <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
+                        <Flex flexDir="column">
+                          <Heading size="sm" letterSpacing="tight">Amazon</Heading>
+                          <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                        </Flex>
                       </Flex>
-                    </Flex>
-                  </Td>
-                  <Td>Electronic Devices</Td>
-                  <Td isNumeric>+2$</Td>
-                  <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
-                </Tr>
+                    </Td>
+                    <Td>Electronic Devices</Td>
+                    <Td isNumeric>+2$</Td>
+                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>
+                      <Flex align="center">
+                        <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
+                        <Flex flexDir="column">
+                          <Heading size="sm" letterSpacing="tight">Amazon</Heading>
+                          <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                        </Flex>
+                      </Flex>
+                    </Td>
+                    <Td>Electronic Devices</Td>
+                    <Td isNumeric>+2$</Td>
+                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>
+                      <Flex align="center">
+                        <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
+                        <Flex flexDir="column">
+                          <Heading size="sm" letterSpacing="tight">Amazon</Heading>
+                          <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                        </Flex>
+                      </Flex>
+                    </Td>
+                    <Td>Electronic Devices</Td>
+                    <Td isNumeric>+2$</Td>
+                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>
+                      <Flex align="center">
+                        <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
+                        <Flex flexDir="column">
+                          <Heading size="sm" letterSpacing="tight">Amazon</Heading>
+                          <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                        </Flex>
+                      </Flex>
+                    </Td>
+                    <Td>Electronic Devices</Td>
+                    <Td isNumeric>+2$</Td>
+                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                  </Tr>
+                  </>
+                }
               </Tbody>
             </Table>
+          </Flex>
+          <Flex align="center">
+            <Divider />
+            <IconButton icon={display == 'show' ? <FiChevronUp /> : <FiChevronDown />} onClick={() => {
+              if(display == 'show'){
+                changeDisplay('none')
+              } else {
+                changeDisplay('show');
+              }
+            }} />
+            <Divider />
           </Flex>
         </Flex>
       </Flex>
