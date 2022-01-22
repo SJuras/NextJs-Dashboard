@@ -152,16 +152,16 @@ export default function dashboard() {
                   <Tr>
                     <Td>
                       <Flex align="center">
-                        <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
+                        <Avatar size="sm" mr={2} src="images/youtube.png" />
                         <Flex flexDir="column">
-                          <Heading size="sm" letterSpacing="tight">Amazon</Heading>
-                          <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                          <Heading size="sm" letterSpacing="tight">Youtube</Heading>
+                          <Text fontSize="sm" color="gray">Apr 24, 2022 at 0:00am</Text>
                         </Flex>
                       </Flex>
                     </Td>
-                    <Td>Electronic Devices</Td>
-                    <Td isNumeric>+2$</Td>
-                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                    <Td>Ad Revenue</Td>
+                    <Td isNumeric>0$</Td>
+                    <Td isNumeric><Text fontWeight="bold" display="inline-table">+$500</Text>.00</Td>
                   </Tr>
                   <Tr>
                     <Td>
@@ -169,13 +169,13 @@ export default function dashboard() {
                         <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
                         <Flex flexDir="column">
                           <Heading size="sm" letterSpacing="tight">Amazon</Heading>
-                          <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                          <Text fontSize="sm" color="gray">Apr 23, 2022 at 2:20pm</Text>
                         </Flex>
                       </Flex>
                     </Td>
-                    <Td>Electronic Devices</Td>
-                    <Td isNumeric>+2$</Td>
-                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                    <Td>Toolkit</Td>
+                    <Td isNumeric>+1$</Td>
+                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$89</Text>.99</Td>
                   </Tr>
                   <Tr>
                     <Td>
@@ -183,27 +183,27 @@ export default function dashboard() {
                         <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
                         <Flex flexDir="column">
                           <Heading size="sm" letterSpacing="tight">Amazon</Heading>
-                          <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                          <Text fontSize="sm" color="gray">Apr 23, 2022 at 2:02pm</Text>
                         </Flex>
                       </Flex>
                     </Td>
                     <Td>Electronic Devices</Td>
-                    <Td isNumeric>+2$</Td>
-                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                    <Td isNumeric>+1$</Td>
+                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$120</Text>.00</Td>
                   </Tr>
                   <Tr>
                     <Td>
                       <Flex align="center">
-                        <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
+                        <Avatar size="sm" mr={2} src="images/starbucks.png" />
                         <Flex flexDir="column">
-                          <Heading size="sm" letterSpacing="tight">Amazon</Heading>
-                          <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                          <Heading size="sm" letterSpacing="tight">Starbucks</Heading>
+                          <Text fontSize="sm" color="gray">Apr 23, 2022 at 8:12am</Text>
                         </Flex>
                       </Flex>
                     </Td>
-                    <Td>Electronic Devices</Td>
+                    <Td>Beverage</Td>
                     <Td isNumeric>+2$</Td>
-                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$12</Text>.00</Td>
                   </Tr>
                   </>
                 }
