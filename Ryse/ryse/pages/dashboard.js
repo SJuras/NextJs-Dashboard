@@ -38,6 +38,9 @@ import {
 import MyChart from '../components/MyChart';
 
 export default function dashboard() {
+
+  
+
   return(
     <Flex h="100vh" flexDir="row" overflow="hidden" maxW="2000px">
       {/* Column 1 */}
@@ -102,7 +105,64 @@ export default function dashboard() {
           <IconButton icon={<FiCalendar />} />
         </Flex>
 
-        
+        <Flex flexDir="column">
+          <Flex overflow="auto">
+            <Table variant="unstyled" mt={4}>
+              <Thead>
+                <Tr color="gray">
+                  <Th>Name of transaction</Th>
+                  <Th>Category</Th>
+                  <Th isNumeric>Cashback</Th>
+                  <Th isNumeric>Amount</Th>
+                </Tr>
+              </Thead>
+              <Tbody>
+                <Tr>
+                  <Td>
+                    <Flex align="center">
+                      <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
+                      <Flex flexDir="column">
+                        <Heading size="sm" letterSpacing="tight">Amazon</Heading>
+                        <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                      </Flex>
+                    </Flex>
+                  </Td>
+                  <Td>Electronic Devices</Td>
+                  <Td isNumeric>+2$</Td>
+                  <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                </Tr>
+                <Tr>
+                  <Td>
+                    <Flex align="center">
+                      <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
+                      <Flex flexDir="column">
+                        <Heading size="sm" letterSpacing="tight">Amazon</Heading>
+                        <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                      </Flex>
+                    </Flex>
+                  </Td>
+                  <Td>Electronic Devices</Td>
+                  <Td isNumeric>+2$</Td>
+                  <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                </Tr>
+                <Tr>
+                  <Td>
+                    <Flex align="center">
+                      <Avatar size="sm" mr={2} src="images/amazon.jpeg" />
+                      <Flex flexDir="column">
+                        <Heading size="sm" letterSpacing="tight">Amazon</Heading>
+                        <Text fontSize="sm" color="gray">Apr 24, 2022 at 1:32pm</Text>
+                      </Flex>
+                    </Flex>
+                  </Td>
+                  <Td>Electronic Devices</Td>
+                  <Td isNumeric>+2$</Td>
+                  <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                </Tr>
+              </Tbody>
+            </Table>
+          </Flex>
+        </Flex>
       </Flex>
 
       {/* Column 3 */}
