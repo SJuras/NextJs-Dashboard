@@ -89,12 +89,24 @@ export default function dashboard() {
       </Flex>
 
       {/* Column 2 */}
-      <Flex>
+      <Flex w="55%" p="3%" flexDir="column" overflow="auto" minH="100vh">
+        <Heading fontWeight="normal" mb={4} letterSpacing="tight">Welcome back, <Flex fontWeight="bold" display="inline-flex">Stjepko</Flex></Heading>
+        <Text color="gray" fontSize="small">My balance: </Text>
+        <Text fontWeight="bold" fontSize="2xl">$5,750.10 </Text>
+        <MyChart />
+        <Flex justifyContent="space-between" mt={8}>
+          <Flex align="flex-end">
+            <Heading as="h2" isze="lg" letterSpacing="tight">Transactions</Heading>
+            <Text fontSize="small" color="gray" ml={4}>Apr 2022</Text>
+          </Flex>
+          <IconButton icon={<FiCalendar />} />
+        </Flex>
 
+        
       </Flex>
 
       {/* Column 3 */}
-      <Flex>
+      <Flex w="35%" bgColor="#f5f5f5" p="3%" flexDir="column" overflow="auto">
 
       </Flex>
     </Flex>
