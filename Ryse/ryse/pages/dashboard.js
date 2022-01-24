@@ -226,7 +226,17 @@ export default function dashboard() {
 
       {/* Column 3 */}
       <Flex w="35%" bgColor="#f5f5f5" p="3%" flexDir="column" overflow="auto">
-
+        <Flex alignContent="center">
+          <InputGroup bgColor="#fff" mb={4} border="none" borderColor="#fff" borderRadius="10px" mr={2}>
+            <InputLeftElement pointerEvents="none" children={<FiSearch  color="gray"/>} />
+            <Input type="number" placeholder="Search" borderRadius="10px" />
+          </InputGroup>
+          <IconButton icon={<FiBell />} fontSize="sm" bgColor="#fff" borderRadius="50%" p="10px"/>
+          <Flex w={30} h={25} bgColor="#b57295" borderRadius="50%" color="#fff" align="center" justify="center" ml="-3" mt="-2" zIndex="100" fontSize="xs">
+            2
+          </Flex>
+        </Flex>
+        <Heading letterSpacing="tight">My Cards</Heading>
       </Flex>
     </Flex>
   );
