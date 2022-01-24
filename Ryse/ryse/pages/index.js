@@ -19,7 +19,7 @@ export default function Home() {
       <Flex h="100%" w="100%" justifyContent="center" alignItems="center" flexDir="column" backgroundColor="#020202" color="#fff">
         <Text>Welcome to</Text>
         <Heading fontSize="6xl" mb={6}>Ryse.</Heading>
-        <Heading fontSize="2xl" mb={8}>Your Number One Payment Service</Heading>
+        <Heading fontSize="2xl" mb={8} textAlign="center">Your Number One Payment Service</Heading>
 
 
         <Link href="/dashboard">

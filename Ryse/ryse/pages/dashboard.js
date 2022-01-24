@@ -44,10 +44,10 @@ export default function dashboard() {
   const [value, changeValue] = useState(1);
 
   return(
-    <Flex h="100vh" flexDir="row" overflow="hidden" maxW="2000px">
+    <Flex h={[null, null, "100vh"]} flexDir={["column", "column", "row"]} overflow="hidden" maxW="2000px">
       {/* Column 1 */}
-      <Flex w="15%" flexDir="column" alignItems="center" backgroundColor="#020202" color="#fff">
-        <Flex flexDir="column" justifyContent="space-between" h="100vh">
+      <Flex w={["100%", "100%", "10%", "15%", "15%"]} flexDir="column" alignItems="center" backgroundColor="#020202" color="#fff">
+        <Flex flexDir="column" justifyContent="space-between" h={[null, null, "100vh"]}>
           <Flex flexDir="column" as="nav">
             <Heading mt={50} mb={2} fontSize="4xl" alignSelf="center" letterSpacing="tight">Ryse.</Heading>
             <Text color="#fff" mb={100}>Payment Made Easy</Text>
@@ -95,7 +95,7 @@ export default function dashboard() {
       </Flex>
 
       {/* Column 2 */}
-      <Flex w="55%" p="3%" flexDir="column" overflow="auto" minH="100vh">
+      <Flex w={["100%", "100%", "60%", "60%", "55%"]} p="3%" flexDir="column" overflow="auto" minH="100vh">
         <Heading fontWeight="normal" mb={4} letterSpacing="tight">Welcome back, <Flex fontWeight="bold" display="inline-flex">Stjepko</Flex></Heading>
         <Text color="gray" fontSize="small">My balance: </Text>
         <Text fontWeight="bold" fontSize="2xl">$5,750.10 </Text>
@@ -228,7 +228,7 @@ export default function dashboard() {
       </Flex>
 
       {/* Column 3 */}
-      <Flex w="35%" bgColor="#f5f5f5" p="3%" flexDir="column" overflow="auto">
+      <Flex w={["100%", "100%", "35%"]} minW={[null, null, "300px", "300px", "400px"]} bgColor="#f5f5f5" p="3%" flexDir="column" overflow="auto">
         <Flex alignContent="center">
           <InputGroup bgColor="#fff" mb={4} border="none" borderColor="#fff" borderRadius="10px" mr={2}>
             <InputLeftElement pointerEvents="none" children={<FiSearch  color="gray"/>} />
