@@ -49,7 +49,8 @@ export default function dashboard() {
       <Flex w="15%" flexDir="column" alignItems="center" backgroundColor="#020202" color="#fff">
         <Flex flexDir="column" justifyContent="space-between" h="100vh">
           <Flex flexDir="column" as="nav">
-            <Heading mt={50} mb={100} fontSize="4xl" alignSelf="center" letterSpacing="tight">Ryse.</Heading>
+            <Heading mt={50} mb={2} fontSize="4xl" alignSelf="center" letterSpacing="tight">Ryse.</Heading>
+            <Text color="#fff" mb={100}>Payment Made Easy</Text>
             <Flex flexDir="column" align="flex-start" justifyContent="center">
                 <Flex className="sidebar-items">
                   <Link>
@@ -390,6 +391,7 @@ export default function dashboard() {
               <Input type="number" placeholder="130.00" />
           </InputGroup>
           <Button mt={4} bgColor="blackAlpha.900" color="#fff" p={7} borderRadius={15}>Send money</Button>
+          <Text mt={4} textAlign="right">Made by: Sarif-Design 2022</Text>
       </Flex>
     </Flex>
   );
