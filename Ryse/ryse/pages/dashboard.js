@@ -291,7 +291,7 @@ export default function dashboard() {
                                 </Flex>
                                 <Flex align="center">
                                     <Icon mr={2} as={FiCreditCard} />
-                                    <Text>Rise.</Text>
+                                    <Text fontWeight="bold">Ryse.</Text>
                                 </Flex>
                             </Flex>
                             <Text mb={4}>**** **** **** 8956</Text>
@@ -327,7 +327,7 @@ export default function dashboard() {
                                 </Flex>
                                 <Flex align="center">
                                     <Icon mr={2} as={FiCreditCard} />
-                                    <Text>Rise.</Text>
+                                    <Text fontWeight="bold">Ryse.</Text>
                                 </Flex>
                             </Flex>
                             <Text mb={4}>**** **** **** 8353</Text>
@@ -347,6 +347,49 @@ export default function dashboard() {
                         </Flex>
                     </Box>
                 }
+                <Flex justifyContent="center" mt={2}>
+                    <Button bgColor={value == 1 ? "gray.600" : "gray.400"} size="xs" mx={1} onClick={() => changeValue(1)} />
+                    <Button bgColor={value == 2 ? "gray.600" : "gray.400"} size="xs" mx={1} onClick={() => changeValue(2)} />
+                    <Button bgColor={value == 3 ? "gray.600" : "gray.400"} size="xs" mx={1} onClick={() => changeValue(3)} />
+                </Flex>
+                <Flex flexDir="column" my={4}>
+                      <Flex justify="space-between" mb={2}>
+                          <Text>Balance</Text>
+                          <Text fontWeight="bold">$140.42</Text>
+                      </Flex>
+                      <Flex justify="space-between">
+                          <Text>Credit Limit</Text>
+                          <Text fontWeight="bold">$150.00</Text>
+                      </Flex>
+                  </Flex>
+        <Heading letterSpacing="tight" size="md" my={4}>Send money to</Heading>
+            <Flex>
+                <AvatarGroup size="md" max={3}>
+                    <Avatar src="images/avatar1.jpg" />
+                    <Avatar src="images/avatar2.jpg" />
+                    <Avatar src="images/avatar3.jpg" />
+                    <Avatar src="images/avatar4.jpg" />
+                    <Avatar src="images/avatar5.jpg" />
+                </AvatarGroup>
+                <Avatar icon={<FiPlus />} ml={2} color="#fff" bgColor="gray.300" />
+            </Flex>
+            <Text color="gray" mt={10} mb={2}>Card number</Text>
+                <InputGroup>
+                    <InputLeftElement
+                        pointerEvents="none"
+                        children={<FiCreditCard color="gray.700" />}
+                    />
+                    <Input type="number" placeholder="xxxx xxxx xxxx xxxx" />
+                </InputGroup>
+                <Text color="gray" mt={4} mb={2}>Sum</Text>
+          <InputGroup>
+              <InputLeftElement
+                  pointerEvents="none"
+                  children={<FiDollarSign color="gray.700" />}
+              />
+              <Input type="number" placeholder="130.00" />
+          </InputGroup>
+          <Button mt={4} bgColor="blackAlpha.900" color="#fff" p={7} borderRadius={15}>Send money</Button>
       </Flex>
     </Flex>
   );
